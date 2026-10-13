@@ -31,6 +31,8 @@ pnpm run docs
 
 Open **http://127.0.0.1:3106**. Installation is explicit; serving/building never installs packages silently. `pnpm run docs:build` checks the site in strict mode.
 
+The [illustrated tour](docs/site/screenshots.md) shows the full menu and captured synthetic screens. The Documentation workflow builds the guide. Public Pages deployment is gated by `DOCS_PAGES_ENABLED=true` and the repository Pages configuration. A private personal repository does not make a GitHub Pages site private.
+
 See the [fidelity audit, Setup map, project proposals and typography options](docs/site/design-review.md).
 
 ## Make it yours

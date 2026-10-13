@@ -214,3 +214,48 @@ a:focus-visible {
     transform: none;
   }
 }
+
+/* Captured synthetic screens with full-resolution image links. */
+.os-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+.md-typeset .os-screen {
+  margin: 0;
+  border: 1px solid var(--os-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  text-align: left;
+}
+.os-screen > a {
+  display: block;
+}
+.md-typeset .os-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 0;
+}
+.md-typeset .os-screen figcaption {
+  font-style: normal;
+  margin: 0;
+  padding: 0.85rem 1rem 1rem;
+}
+.md-typeset .os-screen h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+}
+.os-screen p {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+@media (max-width: 760px) {
+  .os-gallery {
+    grid-template-columns: 1fr;
+  }
+}

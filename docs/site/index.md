@@ -2,7 +2,7 @@
 <p class="os-eyebrow">PERSONAL OS · LOCAL FIRST · OPEN SOURCE</p>
 <h1>Make room for your actual life.</h1>
 <p class="os-lead">A calm workspace for commitments, curiosity and the next small step. Your notes stay readable. Your agent stays yours.</p>
-<div class="os-actions"><a class="os-button" href="install/">Start locally</a><a class="os-button os-button-secondary" href="guide/">Explore the twelve pages</a></div>
+<div class="os-actions"><a class="os-button" href="install/">Start locally</a><a class="os-button os-button-secondary" href="screenshots/">See the workspace</a></div>
 <img class="os-horizon" src="assets/horizon.svg" alt="A pale ocean, a lighthouse and a small garden, connected by one quiet horizon" />
 <p class="os-caption">No account required · Optional AI · Markdown first</p>
 </div>
@@ -13,6 +13,12 @@
 <a class="os-card" href="vaults/"><span class="os-card-number">03 / YOUR CONTEXT</span><h2>Three spaces, one life</h2><p>Operational notes, your self-model and agent guidance have distinct roles. Select exactly what an agent may see.</p><span>Understand the vaults →</span></a>
 <a class="os-card" href="architecture/"><span class="os-card-number">04 / YOUR CONTROL</span><h2>See how it works</h2><p>A local server, readable Markdown, explicit writes and inspectable retrieval. Clear boundaries matter more than invisible automation.</p><span>Architecture and tradeoffs →</span></a>
 </div>
+
+## See the workspace
+
+[![Main dashboard with the numbered sidebar and daily Rhythm](assets/screenshots/main.jpg)](screenshots.md)
+
+[Open the illustrated tour](screenshots.md): the menu, twelve pages, Setup, Review, quick capture and resource details.
 
 ## A real workflow, with fictional details
 

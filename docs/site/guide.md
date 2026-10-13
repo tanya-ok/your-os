@@ -2,6 +2,8 @@
 
 The numbered menu follows three groups: **Movements**, **Home** and **Garden**, followed by **AI Agent**. Each page has its own job. Graph, Projects, Review and Setup are additional workspace tools.
 
+[See all pages in the illustrated tour](screenshots.md).
+
 ## Movements
 
 ### 01 · Main
@@ -40,9 +42,11 @@ Use manual, descriptive records. Sleep records the night interval and common dif
 
 Add books, audiobooks, videos, films, courses or articles, with a title or public HTTPS link. Adding a link or first opening its resource card looks up available public metadata; **Refresh resource details** retries explicitly. Source genres and categories become editable tags and filters. Your corrections and personal notes are preserved when metadata is refreshed. Resources, progress, genres and notes are saved in `Records/Library/resources.md`. A source may omit details, block automated access or exceed the bounded lookup size; manual editing remains available. No model is used for metadata or genre guesses, and personal notes are never sent in the lookup.
 
+A valid ISBN or eISBN can also look up public bibliographic details. If a local model is configured, **Generate overview** uses the available title, creator and public description. It does not receive your notes or a full book, film or course; the result is labelled as a local overview and remains editable and saved in Markdown.
+
 The public sample is **A Dictionary of Logic**, by **Thomas Macaulay Ferguson and Graham Priest**, published by **Oxford University Press in 2016**. Its bibliographic reference is real; the demo's reading status is fictional.
 
-<img class="os-book" src="../assets/library-dictionary-logic.svg" alt="Independent title card for A Dictionary of Logic by Thomas Macaulay Ferguson and Graham Priest" width="180" />
+<img class="os-book" src="assets/library-dictionary-logic.svg" alt="Independent title card for A Dictionary of Logic by Thomas Macaulay Ferguson and Graham Priest" width="180" />
 
 [Official Oxford Reference entry](https://www.oxfordreference.com/view/10.1093/acref/9780191816802.001.0001/acref-9780191816802). The application uses an independently designed title card and bibliographic metadata. It does not distribute the publisher's cover or the book's text. A useful reading step is to choose one term, write your own example and return to it later.
 
@@ -64,7 +68,7 @@ Keep a longer horizon and possible directions without turning each one into a cu
 
 ### 12 · AI Agent
 
-Select notes from explicitly configured vaults, prepare context, inspect source and line references, then choose whether to send. Local search does not call a model. An answer does not execute tools or edit notes. Conversations remain temporary; export a session before closing the page if you want to keep it. [Your AI agent](agent.md) explains the consent flow.
+Select notes from explicitly configured vaults, prepare context, inspect source and line references, then choose whether to send. Local search does not call a model. An answer does not execute tools or edit notes. Conversations remain in page memory until you export them or explicitly save them to local Markdown; saved sessions are excluded from retrieval. [Your AI agent](agent.md) explains the consent flow.
 
 ## Workspace tools
 

@@ -1,6 +1,6 @@
 # A workspace with a point of view
 
-Design and implementation review, 8 October 2026. Based on the owner's requests, the current original dashboard's component structure, the standalone implementation, synthetic tests and local browser review. No private note bodies, assistant identity or corpus were used for this comparison.
+Design and implementation review. Based on the owner's requests, the current original dashboard's component structure, the standalone implementation, synthetic tests and local browser review. No private note bodies, assistant identity or corpus were used for this comparison.
 
 ## What makes the original work
 
@@ -55,7 +55,7 @@ Next refinement: give every section a consistent saved/unsaved indicator, separa
 
 ## What comparable projects suggest
 
-These are design observations, not integrations or copied code. Repositories were read on 8 October 2026.
+These are design observations, not integrations or copied code.
 
 | Reference | Verified capability | Proposal for Personal OS |
 | --- | --- | --- |

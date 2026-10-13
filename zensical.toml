@@ -1,7 +1,7 @@
 [project]
 site_name = "Personal OS"
 site_description = "A quiet, local workspace for a life with more than one direction."
-site_url = "http://127.0.0.1:3106/"
+site_url = "https://tanya-ok.github.io/your-os/"
 docs_dir = "docs/site"
 site_dir = "private/docs-site"
 dev_addr = "127.0.0.1:3106"
@@ -9,7 +9,7 @@ extra_css = ["assets/styles.css"]
 nav = [
   { "Welcome" = "index.md" },
   { "Start here" = [{ "Install locally" = "install.md" }, { "Make it yours" = "setup.md" }] },
-  { "Use your workspace" = [{ "The twelve pages" = "guide.md" }, { "Everyday workflows" = "workflows.md" }, { "Your AI agent" = "agent.md" }, { "Calendars and news" = "integrations.md" }] },
+  { "Use your workspace" = [{ "A look inside" = "screenshots.md" }, { "The twelve pages" = "guide.md" }, { "Everyday workflows" = "workflows.md" }, { "Your AI agent" = "agent.md" }, { "Calendars and news" = "integrations.md" }] },
   { "Understand the system" = [{ "Three vaults" = "vaults.md" }, { "Architecture" = "architecture.md" }, { "Scope and verification" = "status.md" }, { "Design review & proposals" = "design-review.md" }] }
 ]
 

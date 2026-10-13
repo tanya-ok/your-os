@@ -47,7 +47,14 @@ export function publicationPath(path) {
   if (/^(lib|src|tests|scripts)\//.test(path)) return /\.(js|jsx|mjs|sh|swift)$/.test(path);
   if (/^(demo|templates)\//.test(path)) return path.endsWith('.md');
   if (/^prompts\//.test(path)) return path.endsWith('.md');
-  if (path.startsWith('docs/site/')) return /\.(md|svg|css)$/.test(path);
+  if (path.startsWith('docs/site/')) {
+    return (
+      /\.(md|svg|css)$/.test(path) ||
+      /^docs\/site\/assets\/screenshots\/(main|today|gtd|calendar|work|home|health|library|career|learning|future|agent|review|setup|library-detail|quick-capture)\.jpg$/.test(
+        path
+      )
+    );
+  }
   if (path === 'docs/articles/01-adaptive-lighting.md') return true;
   if (parts.length === 2 && parts[0] === 'docs') return documents.has(parts[1]);
   if (path.startsWith('static/')) {
