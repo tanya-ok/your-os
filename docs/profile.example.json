@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "locale": "en",
+  "firstOutcome": "",
+  "workflow": "simple",
+  "availableMinutes": 15,
+  "reviewDay": 0,
+  "reviewTime": "17:00",
+  "lighting": {
+    "mode": "schedule",
+    "manualPhase": "day",
+    "schedule": {
+      "wake": "07:00",
+      "day": "09:00",
+      "evening": "18:00",
+      "sleep": "22:30"
+    },
+    "coordinates": null,
+    "timezone": "UTC"
+  },
+  "accessibility": {
+    "reduceMotion": false,
+    "highContrast": false,
+    "staticScene": false
+  },
+  "agent": {
+    "enabled": false,
+    "persistTranscript": false
+  },
+  "onboardingComplete": false,
+  "areas": [
+    {
+      "id": "home",
+      "title": "Home"
+    },
+    {
+      "id": "future",
+      "title": "Future"
+    },
+    {
+      "id": "learning",
+      "title": "Learning"
+    },
+    {
+      "id": "career",
+      "title": "Career"
+    },
+    {
+      "id": "work",
+      "title": "Work"
+    }
+  ]
+}

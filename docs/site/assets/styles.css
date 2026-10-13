@@ -1,0 +1,216 @@
+/* Local system fonts and a quiet, light ocean palette. */
+:root {
+  --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, monospace;
+  --md-primary-fg-color: #527783;
+  --md-primary-fg-color--light: #7999a1;
+  --md-primary-fg-color--dark: #385965;
+  --md-accent-fg-color: #356c74;
+  --md-default-bg-color: #f4f8fb;
+  --md-default-fg-color: #334951;
+  --md-default-fg-color--light: #63777d;
+  --md-typeset-a-color: #326b75;
+  --os-border: #d8e3e3;
+}
+body {
+  background: #f4f8fb;
+}
+.md-header {
+  background: #e7eff0;
+  color: #34515d;
+  box-shadow: 0 1px 0 #d2dfe2;
+}
+.md-header__topic {
+  font-weight: 650;
+  letter-spacing: 0.025em;
+}
+.md-typeset {
+  font-size: 0.84rem;
+  line-height: 1.75;
+}
+.md-typeset h1 {
+  color: #334f5b;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+.md-typeset h2 {
+  color: #3d626c;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 2em;
+}
+.md-typeset h3 {
+  color: #45646d;
+}
+.md-typeset a {
+  text-underline-offset: 0.18em;
+}
+.md-typeset img {
+  border-radius: 16px;
+}
+.md-typeset table:not([class]) {
+  background: #fff;
+  border: 1px solid var(--os-border);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.72rem;
+}
+.md-typeset table:not([class]) th {
+  background: #e9f0ef;
+  color: #3a5962;
+  font-weight: 650;
+}
+.md-typeset table:not([class]) td {
+  border-top-color: #e3eaea;
+}
+.md-typeset code {
+  background: #eaf0f0;
+  border-radius: 4px;
+}
+.md-typeset pre > code {
+  border-radius: 12px;
+  border: 1px solid var(--os-border);
+  padding: 1.15em;
+}
+.md-nav__link--active {
+  color: #28636f;
+  font-weight: 650;
+}
+.md-nav__link:hover {
+  color: #28636f;
+}
+.os-hero {
+  margin: -0.4rem 0 2rem;
+  padding: 1.6rem 0 0;
+}
+.os-eyebrow {
+  color: #627b82;
+  letter-spacing: 0.14em;
+  font-size: 0.57rem;
+  font-weight: 650;
+}
+.md-typeset .os-hero h1 {
+  margin: 0.8rem 0 0.7rem;
+  max-width: 16ch;
+  font-size: clamp(2.2rem, 5.3vw, 3.5rem);
+  line-height: 1.08;
+}
+.os-lead {
+  max-width: 43rem;
+  color: #61777f;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.os-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.4rem 0;
+}
+.md-typeset .os-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.55rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid #527783;
+  border-radius: 100px;
+  background: #527783;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+.md-typeset .os-button-secondary {
+  background: transparent;
+  color: #426775;
+  border-color: #b8cbcf;
+}
+.md-typeset .os-button:hover {
+  background: #3b606d;
+  color: #fff;
+}
+.os-horizon {
+  width: 100%;
+  display: block;
+  margin: 1.2rem 0 0.4rem;
+}
+.os-caption {
+  color: #697f85;
+  font-size: 0.65rem;
+  letter-spacing: 0.025em;
+}
+.os-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.4rem;
+}
+.md-typeset .os-card {
+  display: flex;
+  flex-direction: column;
+  color: #405c66;
+  background: #fff;
+  border: 1px solid var(--os-border);
+  border-radius: 18px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+.md-typeset .os-card:hover {
+  border-color: #8aafb5;
+  transform: translateY(-2px);
+}
+.os-card-number {
+  color: #708a91;
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  font-weight: 650;
+}
+.md-typeset .os-card h2 {
+  margin: 0.65rem 0 0.3rem;
+  font-size: 1.08rem;
+}
+.os-card p {
+  margin: 0.25rem 0 1rem;
+  font-size: 0.76rem;
+  line-height: 1.7;
+}
+.os-card > span:last-child {
+  color: #386e79;
+  margin-top: auto;
+  font-weight: 650;
+  font-size: 0.68rem;
+}
+.md-typeset .os-book {
+  width: 180px;
+  max-width: 50%;
+  box-shadow: 0 10px 25px #334f5b18;
+}
+a:focus-visible {
+  outline: 3px solid #427b85;
+  outline-offset: 4px;
+}
+@media (max-width: 680px) {
+  .os-grid {
+    grid-template-columns: 1fr;
+  }
+  .md-typeset .os-hero h1 {
+    font-size: 2.35rem;
+  }
+  .os-lead {
+    font-size: 0.92rem;
+  }
+  .md-typeset {
+    font-size: 0.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .os-card {
+    transition: none;
+  }
+  .md-typeset .os-card:hover {
+    transform: none;
+  }
+}

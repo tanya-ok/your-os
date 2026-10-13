@@ -1,0 +1,40 @@
+{
+  "name": "personal-os",
+  "version": "0.2.0",
+  "description": "A configurable local Obsidian workspace with projects, graph, optional model sessions and adaptive light.",
+  "type": "module",
+  "private": true,
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "start": "bash start-with-secrets.sh",
+    "dev": "bash start-with-secrets.sh --watch",
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "check": "biome check .",
+    "format": "biome format --write .",
+    "test": "node --test tests/*.test.js",
+    "smoke": "node scripts/smoke.mjs",
+    "install:ci": "pnpm install --frozen-lockfile",
+    "mcp": "node mcp-server.js",
+    "docs": "bash scripts/docs.sh serve",
+    "docs:build": "bash scripts/docs.sh build"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.17",
+    "@simplewebauthn/server": "14.0.3",
+    "dotenv": "^17.4.1",
+    "hono": "^4.13.13",
+    "js-yaml": "^4.3.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.12",
+    "esbuild": "^0.28.2"
+  }
+}

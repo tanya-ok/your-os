@@ -1,0 +1,239 @@
+.agent-panel {
+  display: grid;
+  gap: 22px;
+}
+.agent-panel .card {
+  padding: 26px;
+}
+.agent-panel h2 {
+  font-family: var(--font-heading);
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+.agent-panel p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.agent-panel .agent-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.agent-panel fieldset {
+  border: 0;
+  margin: 0 0 18px;
+  padding: 0;
+  min-width: 0;
+}
+.agent-panel legend {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.agent-label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  margin: 12px 0;
+  min-width: 0;
+}
+.agent-label textarea,
+.agent-label input,
+.agent-label select {
+  width: 100%;
+  background: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 11px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.agent-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.agent-checkbox input {
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 0;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+.agent-checkbox small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.agent-project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-height: 280px;
+  overflow: auto;
+  padding: 3px;
+}
+.agent-optional {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 17px 0 4px;
+}
+.agent-provider-fields {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 15px;
+}
+.agent-panel .agent-context-text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+.agent-actions,
+.agent-session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.agent-session-actions {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.agent-transcript {
+  display: grid;
+  gap: 12px;
+  max-height: 550px;
+  overflow: auto;
+  margin: 20px 0;
+  padding: 3px;
+}
+.agent-message {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 0;
+}
+.agent-message p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 8px 0 0;
+}
+.agent-message-assistant {
+  border-left: 3px solid var(--accent);
+}
+.agent-compose {
+  display: grid;
+  gap: 12px;
+}
+.agent-compose > button {
+  justify-self: start;
+}
+.agent-error,
+.agent-notice {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: var(--text);
+  background: var(--panel);
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.agent-error {
+  border-left: 3px solid var(--accent);
+}
+@media (max-width: 600px) {
+  .agent-panel .card {
+    padding: 20px;
+  }
+  .agent-provider-fields,
+  .agent-project-list {
+    grid-template-columns: 1fr;
+  }
+  .agent-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+.agent-readable-context {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+.agent-context-request p,
+.agent-context-boundary p {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+.agent-context-boundary {
+  border-left: 2px solid var(--border);
+  padding-left: 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.agent-context-notes {
+  display: grid;
+  gap: 16px;
+}
+.agent-context-note {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  min-width: 0;
+}
+.agent-context-source {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+.agent-note-original {
+  margin-top: 16px;
+}
+.agent-note-original pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.76rem;
+}
+.agent-context-audit,
+.agent-session-backup {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.agent-context-audit summary,
+.agent-session-backup summary,
+.agent-note-original summary {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .agent-context-note {
+    padding: 16px;
+  }
+}
+.owner-passkey {
+  padding: 1.25rem;
+  margin-block: 1rem;
+}
+.owner-passkey summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+.owner-passkey p {
+  margin-block: 0.85rem;
+}
+.owner-passkey form {
+  display: grid;
+  gap: 0.8rem;
+}
+.owner-passkey .button {
+  justify-self: start;
+}

@@ -1,0 +1,2 @@
+# Official PyPI release, published 2026-10-05. Python 3.11 or newer.
+zensical==0.0.68

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="760" viewBox="0 0 500 760" role="img" aria-labelledby="title description">
+<title id="title">A Dictionary of Logic</title><desc id="description">An original Personal OS title card for the public bibliographic reference, not the publisher's cover.</desc>
+<rect x="1" y="1" width="498" height="758" rx="26" fill="#e8f1f6" stroke="#b6cfd8" stroke-width="2"/>
+<rect x="22" y="22" width="10" height="716" rx="5" fill="#729fae"/>
+<g fill="#254b58" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+<text x="60" y="78" font-size="17" letter-spacing="3">LIBRARY REFERENCE</text>
+<text x="60" y="194" font-size="39" font-weight="600">A Dictionary</text>
+<text x="60" y="250" font-size="39" font-weight="600">of Logic</text>
+<text x="60" y="574" font-size="20">Thomas Macaulay Ferguson</text>
+<text x="60" y="607" font-size="20">Graham Priest</text>
+<text x="60" y="662" font-size="17">Oxford University Press · 2016</text>
+<text x="60" y="710" font-size="13" fill="#648590">Independent title card · Personal OS</text>
+</g>
+<g fill="none" stroke="#729fae" stroke-width="3"><path d="M60 396h350M60 420h260M60 444h300"/><circle cx="357" cy="353" r="44"/><path d="M336 353h42M357 332v42"/></g>
+</svg>
